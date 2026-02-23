@@ -3,36 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Nithin Kotha — Azure Data Engineer. Cloud data infrastructure, AI-integrated pipelines, scalable data systems." />
+  <meta name="description" content="Nithin Kotha — Azure Data Engineer. Cloud data infrastructure, AI-integrated pipelines, and scalable data systems." />
   <title>Nithin Kotha</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Custom cursor -->
-  <div class="cursor" id="cursor"></div>
+  <!-- ══════════ NAVBAR ══════════ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-inner">
+      <a href="#hero" class="nav-brand">Nithin Kotha</a>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </nav>
+  </header>
 
-  <!-- ══════════ NAV ══════════ -->
-  <nav class="nav" id="nav">
-    <a href="#hero" class="nav-logo">NK.</a>
-    <ul class="nav-pills">
-      <li><a href="#about"      class="pill">About</a></li>
-      <li><a href="#skills"     class="pill">Skills</a></li>
-      <li><a href="#projects"   class="pill">Projects</a></li>
-      <li><a href="#experience" class="pill">Experience</a></li>
-      <li><a href="#contact"    class="pill active">Contact</a></li>
-    </ul>
-    <button class="nav-burger" id="burger" aria-label="Open menu">
-      <span></span><span></span>
-    </button>
-  </nav>
-
-  <!-- Mobile drawer -->
-  <div class="drawer" id="drawer">
-    <button class="drawer-close" id="drawerClose">✕</button>
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
@@ -41,162 +39,231 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
-  <div class="drawer-overlay" id="drawerOverlay"></div>
 
   <!-- ══════════ HERO ══════════ -->
   <section class="hero" id="hero">
-    <div class="hero-inner">
+    <div class="hero-content">
 
-      <p class="hero-greeting stagger-1">Hey, I'm —</p>
-
-      <h1 class="hero-name stagger-2">
-        <span class="n1">NITHIN</span>
-        <span class="n2">KOTHA<span class="hdot">.</span></span>
-      </h1>
-
-      <div class="hero-role-row stagger-3">
-        <span class="role-pill">Azure Data Engineer</span>
-        <span class="role-pill ai-pill">AI Systems</span>
-        <span class="role-pill cloud-pill">Cloud Infrastructure</span>
+      <div class="hero-top stagger-1">
+        <span class="hero-eyebrow">Azure Data Engineer &amp; AI Systems</span>
       </div>
 
-      <p class="hero-tagline stagger-4">
-        I architect end-to-end data infrastructure on Azure —<br />
-        engineering pipelines that serve not just dashboards, but <em>intelligence.</em>
-      </p>
-
-      <div class="hero-bottom stagger-5">
-        <div class="hero-badges">
-          <span class="hbadge">📍 Texas, USA</span>
-          <span class="hbadge cert">✦ DP-203 Certified</span>
-          <span class="hbadge avail">⬤ Open to roles</span>
+      <div class="hero-center">
+        <div class="hero-text stagger-2">
+          <h1 class="hero-name">Nithin<br /><em>Kotha</em></h1>
+          <p class="hero-tagline stagger-3">
+            Building the data infrastructure that makes<br />
+            cloud systems reliable and AI systems possible.
+          </p>
+          <div class="hero-actions stagger-4">
+            <a href="#projects" class="btn-primary">View my work</a>
+            <a href="#contact" class="btn-secondary">Get in touch</a>
+          </div>
         </div>
-        <div class="hero-ctas">
-          <a href="#projects" class="cta-main">See my work</a>
-          <a href="https://github.com/nithinkotha6" target="_blank" rel="noopener" class="cta-ghost">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-            GitHub
-          </a>
-        </div>
-      </div>
 
-    </div>
-
-    <div class="hero-scroll stagger-5">
-      <span>Scroll</span>
-      <div class="scroll-bar"></div>
-    </div>
-
-    <span class="hero-bg-num">01</span>
-  </section>
-
-  <!-- ══════════ ABOUT ══════════ -->
-  <section class="section" id="about">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="sec-num">02</span>
-        <span class="sec-tag">About</span>
-      </div>
-
-      <div class="about-grid">
-        <div class="about-left reveal delay-1">
-          <h2 class="display-heading">Engineering data<br /><em>systems</em> that<br />power intelligence.</h2>
-        </div>
-        <div class="about-right reveal delay-2">
-          <p>I'm a Microsoft Certified Azure Data Engineer working in Texas, with a track record of delivering production-grade data platforms across financial and enterprise environments. My work sits at the intersection of cloud data engineering, pipeline automation, and AI-integrated systems.</p>
-          <p>With an MS in Business Analytics and hands-on delivery across ADF, Databricks, Synapse, Terraform, and Azure AI services, I bring the architectural discipline to build scalable data infrastructure <em>and</em> the applied AI experience to extend it into RAG pipelines, LLM workflows, and intelligent data products.</p>
-          <p class="quote-line">"I don't just move data — I build systems that make data actionable, observable, and ready for the next layer of intelligence."</p>
-          <div class="tag-cloud reveal delay-3">
-            <span>Cloud Data Engineering</span>
-            <span>AI-Integrated Pipelines</span>
-            <span>Infrastructure as Code</span>
-            <span>Real-Time Monitoring</span>
-            <span>LLM &amp; RAG Systems</span>
-            <span>Business Intelligence</span>
+        <div class="hero-photo stagger-2">
+          <div class="photo-frame">
+            <div class="photo-placeholder">
+              <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="46" r="24" fill="#D4622A" opacity="0.12"/>
+                <path d="M20 100c0-22.09 17.91-40 40-40s40 17.91 40 40" stroke="#D4622A" stroke-width="1.5" opacity="0.2" stroke-linecap="round"/>
+              </svg>
+              <span>Profile Photo</span>
+            </div>
+          </div>
+          <div class="photo-meta">
+            <div class="meta-chip">
+              <span class="chip-dot"></span>
+              Open to roles
+            </div>
+            <div class="meta-chip cert-chip">DP-203 Certified</div>
+            <div class="meta-chip loc-chip">Texas, USA</div>
           </div>
         </div>
       </div>
 
-      <div class="stats-band reveal delay-3">
-        <div class="sstat"><span class="snum">4+</span><span class="slabel">Years in Azure Cloud</span></div>
-        <div class="sstat-div"></div>
-        <div class="sstat"><span class="snum">DP-203</span><span class="slabel">Microsoft Certified</span></div>
-        <div class="sstat-div"></div>
-        <div class="sstat"><span class="snum">10+</span><span class="slabel">Azure Services</span></div>
-        <div class="sstat-div"></div>
-        <div class="sstat"><span class="snum">2</span><span class="slabel">Degrees · US + India</span></div>
+    </div>
+
+    <div class="hero-divider"></div>
+
+    <div class="hero-stats stagger-5">
+      <div class="hstat">
+        <span class="hstat-n">4+</span>
+        <span class="hstat-l">Years in cloud</span>
+      </div>
+      <div class="hstat-sep"></div>
+      <div class="hstat">
+        <span class="hstat-n">10+</span>
+        <span class="hstat-l">Azure services</span>
+      </div>
+      <div class="hstat-sep"></div>
+      <div class="hstat">
+        <span class="hstat-n">MS</span>
+        <span class="hstat-l">Business Analytics</span>
+      </div>
+      <div class="hstat-sep"></div>
+      <div class="hstat">
+        <span class="hstat-n">ADE</span>
+        <span class="hstat-l">Current role</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ ABOUT ══════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label reveal">About</div>
+
+      <div class="about-layout">
+        <div class="about-heading reveal delay-1">
+          <h2>
+            I architect data systems<br />
+            that make <em>intelligence</em><br />
+            possible at scale.
+          </h2>
+        </div>
+
+        <div class="about-body reveal delay-2">
+          <p>
+            I'm a Microsoft Certified Azure Data Engineer working in Texas, with a record of delivering production-grade data platforms across enterprise environments. My work sits at the intersection of cloud data engineering, pipeline automation, and AI-integrated systems — designing the infrastructure that makes both analytics and intelligent applications possible.
+          </p>
+          <p>
+            With an MS in Business Analytics and deep hands-on experience across ADF, Databricks, Synapse, Terraform, and Azure AI services, I bring both the architectural discipline to build scalable data infrastructure and the applied AI experience to extend it into RAG pipelines, LLM workflows, and intelligent data products.
+          </p>
+
+          <div class="focus-list reveal delay-3">
+            <div class="focus-item">
+              <span class="focus-dot"></span>
+              Cloud Data Engineering
+            </div>
+            <div class="focus-item">
+              <span class="focus-dot"></span>
+              AI-Integrated Pipelines
+            </div>
+            <div class="focus-item">
+              <span class="focus-dot"></span>
+              Infrastructure as Code
+            </div>
+            <div class="focus-item">
+              <span class="focus-dot"></span>
+              Real-Time Monitoring
+            </div>
+            <div class="focus-item">
+              <span class="focus-dot"></span>
+              LLM &amp; RAG Systems
+            </div>
+            <div class="focus-item">
+              <span class="focus-dot"></span>
+              Business Intelligence
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ══════════ SKILLS ══════════ -->
-  <section class="section section-alt" id="skills">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="sec-num">03</span>
-        <span class="sec-tag">Expertise</span>
-      </div>
-      <h2 class="section-heading reveal delay-1">Technical <em>Stack</em></h2>
+  <section class="section section-warm" id="skills">
+    <div class="container">
+      <div class="section-label reveal">Expertise</div>
+      <h2 class="section-title reveal delay-1">Technical <em>Stack</em></h2>
 
       <div class="skills-grid">
 
-        <div class="skill-card reveal delay-1">
-          <div class="skill-card-head">
-            <div class="sk-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg></div>
+        <div class="skill-group reveal delay-1">
+          <div class="sg-head">
+            <div class="sg-icon blue">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2.5 12.5a3.333 3.333 0 003.333 3.333H15a4.167 4.167 0 10-.083-8.333A4.167 4.167 0 104.25 9.247 3.334 3.334 0 002.5 12.5z"/></svg>
+            </div>
             <h3>Cloud &amp; Infrastructure</h3>
           </div>
-          <div class="chips">
-            <span>Azure Data Factory</span><span>Databricks</span><span>Synapse Analytics</span>
-            <span>Data Lake Gen2</span><span>Cosmos DB</span><span>Azure SQL DB</span>
-            <span>Stream Analytics</span><span>Event Hub</span><span>Logic Apps</span>
+          <div class="sg-chips">
+            <span>Azure Data Factory</span>
+            <span>Azure Databricks</span>
+            <span>Synapse Analytics</span>
+            <span>Data Lake Gen2</span>
+            <span>Azure Cosmos DB</span>
+            <span>Azure SQL DB</span>
+            <span>Stream Analytics</span>
+            <span>Event Hub</span>
+            <span>Logic Apps</span>
             <span>Cognitive Services</span>
           </div>
         </div>
 
-        <div class="skill-card ai-card reveal delay-2">
-          <div class="skill-card-head">
-            <div class="sk-icon violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a2 2 0 012 2v2a2 2 0 01-2 2 2 2 0 01-2-2V4a2 2 0 012-2zM12 16a2 2 0 012 2v2a2 2 0 01-2 2 2 2 0 01-2-2v-2a2 2 0 012-2zM2 12a2 2 0 012-2h2a2 2 0 012 2 2 2 0 01-2 2H4a2 2 0 01-2-2zM16 12a2 2 0 012-2h2a2 2 0 012 2 2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div>
+        <div class="skill-group sg-ai reveal delay-2">
+          <div class="sg-head">
+            <div class="sg-icon orange">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="10" cy="10" r="2"/><path d="M10 2v2m0 12v2M3.515 3.515l1.414 1.414m10.142 10.142l1.414 1.414M2 10h2m12 0h2M3.515 16.485l1.414-1.414m10.142-10.142l1.414-1.414"/></svg>
+            </div>
             <h3>AI &amp; Intelligent Systems</h3>
           </div>
-          <div class="chips ai-chips">
-            <span>LangChain</span><span>LangGraph</span><span>RAG Systems</span>
-            <span>Vector Databases</span><span>Embeddings</span><span>LLM Integration</span>
-            <span>AI Chatbot Dev</span><span>Azure OpenAI</span><span>MCP Server</span>
+          <div class="sg-chips sg-chips-ai">
+            <span>LangChain</span>
+            <span>LangGraph</span>
+            <span>RAG Systems</span>
+            <span>Vector Databases</span>
+            <span>Embeddings</span>
+            <span>LLM Integration</span>
+            <span>AI Chatbot Dev</span>
+            <span>Azure OpenAI</span>
+            <span>MCP Server</span>
             <span>Claude API</span>
           </div>
         </div>
 
-        <div class="skill-card reveal delay-1">
-          <div class="skill-card-head">
-            <div class="sk-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div>
+        <div class="skill-group reveal delay-1">
+          <div class="sg-head">
+            <div class="sg-icon green">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><ellipse cx="10" cy="4.5" rx="7.5" ry="2.5"/><path d="M17.5 10c0 1.38-3.358 2.5-7.5 2.5S2.5 11.38 2.5 10"/><path d="M2.5 4.5v11c0 1.38 3.358 2.5 7.5 2.5s7.5-1.12 7.5-2.5v-11"/></svg>
+            </div>
             <h3>Data Engineering &amp; Analytics</h3>
           </div>
-          <div class="chips">
-            <span>Apache Spark</span><span>Qlik Replicate</span><span>Log Analytics</span>
-            <span>KQL</span><span>Power BI</span><span>Tableau</span>
+          <div class="sg-chips">
+            <span>Apache Spark</span>
+            <span>Qlik Replicate</span>
+            <span>Log Analytics</span>
+            <span>KQL</span>
+            <span>Power BI</span>
+            <span>Tableau</span>
           </div>
         </div>
 
-        <div class="skill-card reveal delay-2">
-          <div class="skill-card-head">
-            <div class="sk-icon orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg></div>
+        <div class="skill-group reveal delay-2">
+          <div class="sg-head">
+            <div class="sg-icon slate">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12.25 5.25a.75.75 0 000 1.167l1.333 1.333-1.333 1.333a.75.75 0 001.1 1.017l1.75-1.75a.75.75 0 000-1.1l-1.75-1.75a.75.75 0 00-1.1.75zM7.75 5.25a.75.75 0 010 1.167L6.417 7.75 7.75 9.083a.75.75 0 01-1.1 1.017L4.9 8.35a.75.75 0 010-1.1L6.65 5.5a.75.75 0 011.1-.25z"/><path d="M2.5 2.5h15a1.25 1.25 0 011.25 1.25v12.5A1.25 1.25 0 0117.5 17.5h-15A1.25 1.25 0 011.25 16.25V3.75A1.25 1.25 0 012.5 2.5z"/></svg>
+            </div>
             <h3>DevOps &amp; IaC</h3>
           </div>
-          <div class="chips">
-            <span>Terraform</span><span>ARM Templates</span><span>Azure DevOps</span>
-            <span>CI/CD</span><span>Build Pipelines</span><span>Release Pipelines</span>
-            <span>Git · GitHub</span>
+          <div class="sg-chips">
+            <span>Terraform</span>
+            <span>ARM Templates</span>
+            <span>Azure DevOps</span>
+            <span>CI/CD</span>
+            <span>Build Pipelines</span>
+            <span>Release Pipelines</span>
+            <span>Git &amp; GitHub</span>
           </div>
         </div>
 
-        <div class="skill-card wide-card reveal delay-1">
-          <div class="skill-card-head">
-            <div class="sk-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+        <div class="skill-group skill-group-full reveal delay-1">
+          <div class="sg-head">
+            <div class="sg-icon slate">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><polyline points="13.333 15 17.5 10 13.333 5"/><polyline points="6.667 5 2.5 10 6.667 15"/></svg>
+            </div>
             <h3>Programming &amp; Databases</h3>
           </div>
-          <div class="chips">
-            <span>Python</span><span>NumPy · Pandas · Matplotlib</span><span>SQL</span><span>R</span>
-            <span>Azure SQL DB</span><span>MySQL</span><span>Oracle</span><span>MS SQL Server</span>
+          <div class="sg-chips">
+            <span>Python</span>
+            <span>NumPy &amp; Pandas</span>
+            <span>Matplotlib</span>
+            <span>SQL</span>
+            <span>R</span>
+            <span>Azure SQL DB</span>
+            <span>MySQL</span>
+            <span>Oracle</span>
+            <span>MS SQL Server</span>
           </div>
         </div>
 
@@ -206,123 +273,130 @@
 
   <!-- ══════════ PROJECTS ══════════ -->
   <section class="section" id="projects">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="sec-num">04</span>
-        <span class="sec-tag">Work</span>
-      </div>
-      <h2 class="section-heading reveal delay-1">Selected <em>Projects</em></h2>
+    <div class="container">
+      <div class="section-label reveal">Work</div>
+      <h2 class="section-title reveal delay-1">Selected <em>Projects</em></h2>
 
-      <div class="proj-list">
+      <div class="projects-list">
 
-        <a href="https://github.com/nithinkotha6/Live-Azure-Data-Pipeline-Monitoring" target="_blank" rel="noopener" class="proj-row reveal delay-1">
-          <div class="pr-left">
-            <span class="pr-num">01</span>
-            <div class="pr-body">
-              <h3>Live Azure Data Pipeline Monitoring</h3>
-              <p>Centralized observability for ADF and Synapse pipelines — surfaces failures, visualizes health, and enables rapid incident response. Closes the gap between execution and engineering awareness in production.</p>
-              <div class="pr-chips">
-                <span>Azure Data Factory</span><span>Synapse Analytics</span><span>Log Analytics</span><span>KQL</span>
-              </div>
+        <div class="project-card reveal delay-1">
+          <div class="pc-top">
+            <div class="pc-meta">
+              <span class="pc-index">01</span>
+              <span class="pc-tag">Observability</span>
             </div>
+            <a href="https://github.com/nithinkotha6/Live-Azure-Data-Pipeline-Monitoring" target="_blank" rel="noopener" class="pc-link" aria-label="GitHub">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4.667 11.333L11.333 4.667M4.667 4.667h6.666v6.666"/></svg>
+            </a>
           </div>
-          <div class="pr-right">
-            <span class="pr-tag">Observability</span>
-            <div class="pr-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17L17 7M7 7h10v10"/></svg></div>
+          <h3 class="pc-title">Live Azure Data Pipeline Monitoring</h3>
+          <p class="pc-desc">Centralized observability for ADF and Synapse pipeline runs — surfaces failures, visualizes health, and enables rapid incident response. Built to close the operational gap between pipeline execution and engineering awareness in production.</p>
+          <div class="pc-challenge">
+            <strong>Challenge solved:</strong> Eliminating silent pipeline failures that propagate undetected into downstream analytics layers.
           </div>
-        </a>
-
-        <div class="proj-sep"></div>
-
-        <a href="https://github.com/nithinkotha6/IAC-Azure-Terraform" target="_blank" rel="noopener" class="proj-row reveal delay-2">
-          <div class="pr-left">
-            <span class="pr-num">02</span>
-            <div class="pr-body">
-              <h3>IAC — Azure Infrastructure with Terraform</h3>
-              <p>Modular Terraform configurations that provision Azure resources consistently across environments. Version-controlled, peer-reviewable infrastructure that enforces standards and eliminates configuration drift.</p>
-              <div class="pr-chips">
-                <span>Terraform</span><span>Azure</span><span>HCL</span><span>IaC</span>
-              </div>
-            </div>
-          </div>
-          <div class="pr-right">
-            <span class="pr-tag">Infrastructure</span>
-            <div class="pr-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17L17 7M7 7h10v10"/></svg></div>
-          </div>
-        </a>
-
-        <div class="proj-sep"></div>
-
-        <div class="proj-row proj-row-ai reveal delay-1">
-          <div class="pr-left">
-            <span class="pr-num">03</span>
-            <div class="pr-body">
-              <h3>SharePoint → RAG Spark Ingestion Pipeline <span class="ai-label-pill">AI</span></h3>
-              <p>Apache Spark pipeline extracting structured and unstructured enterprise content from SharePoint, normalizing for embedding generation, and ingesting into a vector database — the foundational data layer for RAG models and enterprise AI chatbots. Full arc from raw enterprise content to AI-consumable knowledge store.</p>
-              <div class="pr-chips ai-pr-chips">
-                <span>Apache Spark</span><span>SharePoint API</span><span>Data Lake Gen2</span><span>Vector DB</span><span>Embeddings</span><span>LangChain</span><span>Python</span>
-              </div>
-            </div>
-          </div>
-          <div class="pr-right">
-            <span class="pr-tag ai-pr-tag">AI · RAG</span>
-            <div class="pr-lock">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
-              <span>Private</span>
-            </div>
+          <div class="pc-chips">
+            <span>Azure Data Factory</span>
+            <span>Synapse Analytics</span>
+            <span>Log Analytics</span>
+            <span>KQL</span>
           </div>
         </div>
 
-        <div class="proj-sep"></div>
-
-        <a href="https://github.com/nithinkotha6/AURIS-Health-Tracker" target="_blank" rel="noopener" class="proj-row reveal delay-2">
-          <div class="pr-left">
-            <span class="pr-num">04</span>
-            <div class="pr-body">
-              <h3>AURIS Health Tracker</h3>
-              <p>Android health dashboard for nutrient and wellness tracking. End-to-end product engineering — from time-series health data schema to mobile UI — demonstrating cross-domain technical range.</p>
-              <div class="pr-chips">
-                <span>Kotlin</span><span>Android</span><span>Data Modeling</span>
-              </div>
+        <div class="project-card reveal delay-2">
+          <div class="pc-top">
+            <div class="pc-meta">
+              <span class="pc-index">02</span>
+              <span class="pc-tag">Infrastructure as Code</span>
             </div>
+            <a href="https://github.com/nithinkotha6/IAC-Azure-Terraform" target="_blank" rel="noopener" class="pc-link" aria-label="GitHub">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4.667 11.333L11.333 4.667M4.667 4.667h6.666v6.666"/></svg>
+            </a>
           </div>
-          <div class="pr-right">
-            <span class="pr-tag">Mobile</span>
-            <div class="pr-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17L17 7M7 7h10v10"/></svg></div>
+          <h3 class="pc-title">IAC — Azure Infrastructure with Terraform</h3>
+          <p class="pc-desc">Modular Terraform configurations that provision Azure cloud resources consistently across environments. Version-controlled, peer-reviewable infrastructure that enforces standards and eliminates configuration drift across dev, staging, and production.</p>
+          <div class="pc-challenge">
+            <strong>Challenge solved:</strong> Replacing manual provisioning with auditable, repeatable infrastructure deployments.
           </div>
-        </a>
+          <div class="pc-chips">
+            <span>Terraform</span>
+            <span>Azure</span>
+            <span>HCL</span>
+          </div>
+        </div>
 
-        <div class="proj-sep"></div>
+        <div class="project-card project-card-ai reveal delay-1">
+          <div class="pc-top">
+            <div class="pc-meta">
+              <span class="pc-index">03</span>
+              <span class="pc-tag pc-tag-ai">AI · RAG</span>
+            </div>
+            <span class="pc-private">Private repo</span>
+          </div>
+          <h3 class="pc-title">SharePoint to RAG — Spark Ingestion Pipeline</h3>
+          <p class="pc-desc">Apache Spark pipeline that extracts structured and unstructured enterprise data from SharePoint, normalizes it for embedding generation, and ingests it into a vector database — forming the foundational data layer for RAG models and enterprise AI chatbots. Full arc from raw content to AI-consumable knowledge store.</p>
+          <div class="pc-challenge">
+            <strong>Challenge solved:</strong> Bridging siloed enterprise document repositories with LLM-ready retrieval infrastructure.
+          </div>
+          <div class="pc-chips">
+            <span>Apache Spark</span>
+            <span>SharePoint API</span>
+            <span>Data Lake Gen2</span>
+            <span>Vector DB</span>
+            <span>Embeddings</span>
+            <span>LangChain</span>
+            <span>Python</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-2">
+          <div class="pc-top">
+            <div class="pc-meta">
+              <span class="pc-index">04</span>
+              <span class="pc-tag">Mobile · Data Modeling</span>
+            </div>
+            <a href="https://github.com/nithinkotha6/AURIS-Health-Tracker" target="_blank" rel="noopener" class="pc-link" aria-label="GitHub">
+              <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4.667 11.333L11.333 4.667M4.667 4.667h6.666v6.666"/></svg>
+            </a>
+          </div>
+          <h3 class="pc-title">AURIS Health Tracker</h3>
+          <p class="pc-desc">Android health dashboard for nutrient and wellness tracking. End-to-end product engineering — from time-series health data schema to mobile UI — demonstrating cross-domain technical range beyond data infrastructure.</p>
+          <div class="pc-challenge">
+            <strong>Challenge solved:</strong> Modeling multi-dimensional health metrics that surface meaningful trends without cognitive overload.
+          </div>
+          <div class="pc-chips">
+            <span>Kotlin</span>
+            <span>Android</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <!-- ══════════ MINDSET ══════════ -->
-  <section class="section section-alt" id="mindset">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="sec-num">05</span>
-        <span class="sec-tag">Philosophy</span>
-      </div>
-      <h2 class="section-heading reveal delay-1">Engineering <em>Mindset</em></h2>
-      <div class="mindset-grid">
-        <div class="m-item reveal delay-1">
-          <span class="m-roman">I</span>
+  <section class="section section-warm" id="mindset">
+    <div class="container">
+      <div class="section-label reveal">Philosophy</div>
+      <h2 class="section-title reveal delay-1">Engineering <em>Principles</em></h2>
+
+      <div class="principles-grid">
+        <div class="principle reveal delay-1">
+          <span class="p-num">I</span>
           <h3>Systems Thinking</h3>
           <p>Every pipeline exists within a larger system — storage layers, compute clusters, consumers, and failure cascades. I design with the full system in view, not just the component in front of me.</p>
         </div>
-        <div class="m-item reveal delay-2">
-          <span class="m-roman">II</span>
+        <div class="principle reveal delay-2">
+          <span class="p-num">II</span>
           <h3>Scalability by Design</h3>
           <p>Parameterized pipelines, modular infrastructure, and schema-aware ingestion patterns are the default — not the upgrade. The architectures I build absorb growth without requiring rewrites.</p>
         </div>
-        <div class="m-item reveal delay-1">
-          <span class="m-roman">III</span>
+        <div class="principle reveal delay-1">
+          <span class="p-num">III</span>
           <h3>Reliability &amp; Observability</h3>
-          <p>Monitoring is not a post-deployment concern. Logging, alerting, and pipeline health visibility are woven into every delivery — the cost of discovering failures downstream always exceeds preventing them.</p>
+          <p>Monitoring is woven into every delivery from day one. The cost of discovering failures downstream always exceeds the cost of preventing them upstream.</p>
         </div>
-        <div class="m-item reveal delay-2">
-          <span class="m-roman">IV</span>
+        <div class="principle reveal delay-2">
+          <span class="p-num">IV</span>
           <h3>Infrastructure as Code</h3>
           <p>Cloud resources are engineering artifacts. I treat infrastructure with the same rigor as application code: versioned, reviewed, tested, and deployed through automation.</p>
         </div>
@@ -332,205 +406,258 @@
 
   <!-- ══════════ EXPERIENCE ══════════ -->
   <section class="section" id="experience">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="sec-num">06</span>
-        <span class="sec-tag">Career</span>
-      </div>
-      <h2 class="section-heading reveal delay-1">Professional <em>Experience</em></h2>
+    <div class="container">
+      <div class="section-label reveal">Career</div>
+      <h2 class="section-title reveal delay-1">Professional <em>Experience</em></h2>
 
-      <div class="exp-list">
-        <div class="exp-item current reveal delay-1">
-          <div class="exp-meta">
-            <span class="exp-date">Sep 2024 — Present</span>
-            <span class="now-badge">Now</span>
+      <div class="exp-cards">
+
+        <div class="exp-card exp-card-current reveal delay-1">
+          <div class="ec-left">
+            <div class="ec-period">
+              <span class="ec-date">Sep 2024 — Present</span>
+              <span class="ec-now">Current</span>
+            </div>
+            <div class="ec-company">XYZ Technologies Inc</div>
+            <div class="ec-location">Texas, USA</div>
           </div>
-          <div class="exp-content">
-            <h3>Azure Data Engineer</h3>
-            <p class="exp-co">XYZ Technologies Inc · Texas, USA</p>
-            <p class="exp-desc">Designing and operating enterprise cloud data platforms. ETL/ELT pipeline development, infrastructure automation, real-time data streaming, and AI-integrated data system engineering.</p>
-            <div class="exp-chips"><span>Azure Cloud</span><span>Qlik</span><span>CI/CD</span><span>Git</span></div>
-          </div>
-        </div>
-        <div class="exp-sep"></div>
-        <div class="exp-item reveal delay-2">
-          <div class="exp-meta"><span class="exp-date">Jun 2024 — Aug 2024</span></div>
-          <div class="exp-content">
-            <h3>Azure Data Engineer</h3>
-            <p class="exp-co">XYZ Tech Inc · Texas, USA</p>
-            <p class="exp-desc">Azure cloud data engineering with CI/CD pipeline implementation and Qlik-based data replication workflows.</p>
-            <div class="exp-chips"><span>Azure Cloud</span><span>Qlik</span><span>CI/CD</span></div>
-          </div>
-        </div>
-        <div class="exp-sep"></div>
-        <div class="exp-item reveal delay-1">
-          <div class="exp-meta"><span class="exp-date">Feb 2024 — May 2024</span></div>
-          <div class="exp-content">
-            <h3>Data Engineer Intern</h3>
-            <p class="exp-co">XYZ Tech Inc · Texas, USA</p>
-            <p class="exp-desc">Azure cloud services data pipeline development and integration workflows in enterprise environments.</p>
-            <div class="exp-chips"><span>Azure Cloud</span><span>Git</span><span>CI/CD</span></div>
+          <div class="ec-right">
+            <h3 class="ec-role">Azure Data Engineer</h3>
+            <p class="ec-desc">Designing and operating enterprise cloud data platforms on Azure. Responsibilities span ETL/ELT pipeline development, infrastructure automation, real-time data streaming, and AI-integrated data system engineering across financial-grade environments.</p>
+            <div class="ec-chips">
+              <span>Azure Cloud Services</span>
+              <span>Qlik</span>
+              <span>CI/CD</span>
+              <span>Git</span>
+            </div>
           </div>
         </div>
-        <div class="exp-sep"></div>
-        <div class="exp-item reveal delay-2">
-          <div class="exp-meta"><span class="exp-date">Feb 2021 — Nov 2021</span></div>
-          <div class="exp-content">
-            <h3>Data Analyst Intern</h3>
-            <p class="exp-co">Solutions Pvt Ltd · Hyderabad, India</p>
-            <p class="exp-desc">Cloud-integrated data workflows, dashboards, and data preparation pipelines.</p>
-            <div class="exp-chips"><span>Azure Cloud</span><span>Git</span><span>Analytics</span></div>
+
+        <div class="exp-card reveal delay-2">
+          <div class="ec-left">
+            <div class="ec-period">
+              <span class="ec-date">Jun 2024 — Aug 2024</span>
+            </div>
+            <div class="ec-company">XYZ Tech Inc</div>
+            <div class="ec-location">Texas, USA</div>
+          </div>
+          <div class="ec-right">
+            <h3 class="ec-role">Azure Data Engineer</h3>
+            <p class="ec-desc">Delivered Azure cloud data engineering with CI/CD pipeline implementation and Qlik-based data replication workflows in an enterprise context.</p>
+            <div class="ec-chips">
+              <span>Azure Cloud Services</span>
+              <span>Qlik</span>
+              <span>CI/CD</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card reveal delay-1">
+          <div class="ec-left">
+            <div class="ec-period">
+              <span class="ec-date">Feb 2024 — May 2024</span>
+            </div>
+            <div class="ec-company">XYZ Tech Inc</div>
+            <div class="ec-location">Texas, USA</div>
+          </div>
+          <div class="ec-right">
+            <h3 class="ec-role">Data Engineer <em>Intern</em></h3>
+            <p class="ec-desc">Azure cloud services data pipeline development and integration workflows, building production experience in enterprise data environments.</p>
+            <div class="ec-chips">
+              <span>Azure Cloud Services</span>
+              <span>Git</span>
+              <span>CI/CD</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-card reveal delay-2">
+          <div class="ec-left">
+            <div class="ec-period">
+              <span class="ec-date">Feb 2021 — Nov 2021</span>
+            </div>
+            <div class="ec-company">Solutions Pvt Ltd</div>
+            <div class="ec-location">Hyderabad, India</div>
+          </div>
+          <div class="ec-right">
+            <h3 class="ec-role">Data Analyst <em>Intern</em></h3>
+            <p class="ec-desc">Cloud-integrated data workflows, reporting dashboards, and data preparation pipelines across enterprise analytics systems.</p>
+            <div class="ec-chips">
+              <span>Azure Cloud Services</span>
+              <span>Git</span>
+              <span>Analytics</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education -->
+      <div class="edu-section reveal delay-2">
+        <div class="section-label">Education</div>
+        <div class="edu-cards">
+          <div class="edu-card">
+            <span class="edu-year">Dec 2023</span>
+            <div class="edu-body">
+              <strong>M.S. Business Analytics</strong>
+              <span class="edu-school">University of ABC, USA</span>
+              <span class="edu-detail">Specialization: Business Intelligence &amp; Analytics &middot; GPA 3.25 / 4.0</span>
+            </div>
+          </div>
+          <div class="edu-card">
+            <span class="edu-year">May 2021</span>
+            <div class="edu-body">
+              <strong>B.S. Computer Science &amp; Engineering</strong>
+              <span class="edu-school">ABCD University, Hyderabad, India</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="edu-block reveal delay-2">
-        <h3 class="edu-head">Education</h3>
-        <div class="edu-row">
-          <div class="edu-item">
-            <span class="edu-yr">Dec 2023</span>
-            <strong>M.S. Business Analytics</strong>
-            <span>University of ABC, USA · BI &amp; Analytics Specialization · GPA 3.25/4.0</span>
-          </div>
-          <div class="edu-item">
-            <span class="edu-yr">May 2021</span>
-            <strong>B.S. Computer Science &amp; Engineering</strong>
-            <span>ABCD University, Hyderabad, India</span>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
-  <!-- ══════════ CERTS ══════════ -->
-  <section class="section section-alt" id="certifications">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <span class="sec-num">07</span>
-        <span class="sec-tag">Credentials</span>
-      </div>
-      <h2 class="section-heading reveal delay-1">Certifications <em>&amp; Training</em></h2>
-      <div class="cert-list">
-        <div class="cert-item feat reveal delay-1">
-          <div class="ci-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <div class="ci-text"><strong>Azure Data Engineer Associate</strong><span>Microsoft Certified · DP-203</span></div>
-          <span class="ci-pill">Professional</span>
+  <!-- ══════════ CERTIFICATIONS ══════════ -->
+  <section class="section section-warm" id="certifications">
+    <div class="container">
+      <div class="section-label reveal">Credentials</div>
+      <h2 class="section-title reveal delay-1">Certifications <em>&amp; Training</em></h2>
+
+      <div class="certs-grid">
+
+        <div class="cert-card cert-featured reveal delay-1">
+          <div class="cert-icon orange">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M10 18.333S1.667 14.167 1.667 8.333V4.167L10 1.667l8.333 2.5v4.166c0 5.834-8.333 10-8.333 10z"/></svg>
+          </div>
+          <div class="cert-body">
+            <strong>Azure Data Engineer Associate</strong>
+            <span>Microsoft Certified &middot; DP-203</span>
+          </div>
+          <span class="cert-badge">Professional</span>
         </div>
-        <div class="cert-item feat reveal delay-2">
-          <div class="ci-icon blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <div class="ci-text"><strong>Azure Fundamentals</strong><span>Microsoft Certified · DP-900</span></div>
-          <span class="ci-pill associate">Associate</span>
+
+        <div class="cert-card cert-featured reveal delay-2">
+          <div class="cert-icon orange">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M10 18.333S1.667 14.167 1.667 8.333V4.167L10 1.667l8.333 2.5v4.166c0 5.834-8.333 10-8.333 10z"/></svg>
+          </div>
+          <div class="cert-body">
+            <strong>Azure Fundamentals</strong>
+            <span>Microsoft Certified &middot; DP-900</span>
+          </div>
+          <span class="cert-badge cert-badge-grey">Associate</span>
         </div>
-        <div class="cert-item reveal delay-1">
-          <div class="ci-icon grey"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-          <div class="ci-text"><strong>Python for Everybody Specialization</strong><span>Coursera</span></div>
+
+        <div class="cert-card reveal delay-1">
+          <div class="cert-icon grey">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="1.667" y="3.333" width="16.666" height="11.667" rx="1.667"/><path d="M6.667 18.333h6.666M10 15v3.333"/></svg>
+          </div>
+          <div class="cert-body">
+            <strong>Python for Everybody Specialization</strong>
+            <span>Coursera</span>
+          </div>
         </div>
-        <div class="cert-item reveal delay-2">
-          <div class="ci-icon grey"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-          <div class="ci-text"><strong>Complete Oracle SQL</strong><span>Udemy</span></div>
+
+        <div class="cert-card reveal delay-2">
+          <div class="cert-icon grey">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="1.667" y="3.333" width="16.666" height="11.667" rx="1.667"/><path d="M6.667 18.333h6.666M10 15v3.333"/></svg>
+          </div>
+          <div class="cert-body">
+            <strong>Complete Oracle SQL</strong>
+            <span>Udemy</span>
+          </div>
         </div>
-        <div class="cert-item reveal delay-1">
-          <div class="ci-icon grey"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-          <div class="ci-text"><strong>R Programming</strong><span>DataCamp</span></div>
+
+        <div class="cert-card reveal delay-1">
+          <div class="cert-icon grey">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="1.667" y="3.333" width="16.666" height="11.667" rx="1.667"/><path d="M6.667 18.333h6.666M10 15v3.333"/></svg>
+          </div>
+          <div class="cert-body">
+            <strong>R Programming</strong>
+            <span>DataCamp</span>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
   <!-- ══════════ CONTACT ══════════ -->
   <section class="section contact-section" id="contact">
-    <div class="wrap contact-wrap">
-      <div class="sec-head reveal">
-        <span class="sec-num">08</span>
-        <span class="sec-tag">Contact</span>
-      </div>
-      <h2 class="contact-big reveal delay-1">Interested in<br /><em>what I build?</em></h2>
-      <p class="contact-sub reveal delay-2">Open to senior data engineering roles, AI infrastructure discussions, and technical collaboration. Let's talk about the problem you're solving.</p>
-      <div class="contact-links reveal delay-2">
-        <a href="https://github.com/nithinkotha6" target="_blank" rel="noopener" class="cl">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="19" height="19"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.463-1.11-1.463-.908-.62.069-.607.069-.607 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836a9.59 9.59 0 012.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
-          GitHub
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M7 17L17 7M7 7h10v10"/></svg>
-        </a>
-        <a href="https://linkedin.com/in/nithinkotha" target="_blank" rel="noopener" class="cl">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="19" height="19"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          LinkedIn
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M7 17L17 7M7 7h10v10"/></svg>
-        </a>
-        <a href="mailto:nithinkotha6@gmail.com" class="cl">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="19" height="19"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          Email
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M7 17L17 7M7 7h10v10"/></svg>
-        </a>
+    <div class="container">
+      <div class="contact-box reveal">
+        <div class="section-label light-label">Contact</div>
+        <h2 class="contact-heading">
+          Interested in<br /><em>what I build?</em>
+        </h2>
+        <p class="contact-sub">
+          Open to senior data engineering roles, AI infrastructure discussions,<br />and technical collaboration. Let's talk about the problem you're solving.
+        </p>
+        <div class="contact-links">
+          <a href="https://github.com/nithinkotha6" target="_blank" rel="noopener" class="contact-btn">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1.667A8.333 8.333 0 101.667 10c0 3.681 2.387 6.805 5.7 7.907.416.077.569-.181.569-.402 0-.197-.008-.72-.011-1.417-2.318.503-2.807-1.118-2.807-1.118-.38-.963-.926-1.22-.926-1.22-.757-.517.057-.506.057-.506.837.059 1.277.859 1.277.859.743 1.274 1.95.906 2.425.693.076-.539.29-.907.529-1.115-1.85-.21-3.796-.925-3.796-4.118 0-.909.325-1.653.858-2.236-.086-.21-.372-1.058.081-2.206 0 0 .7-.224 2.292.854A7.98 7.98 0 0110 5.697a7.98 7.98 0 012.086.281c1.59-1.078 2.29-.854 2.29-.854.454 1.148.169 1.996.083 2.206.534.583.857 1.327.857 2.236 0 3.2-1.95 3.905-3.806 4.112.299.258.565.765.565 1.542 0 1.113-.01 2.01-.01 2.284 0 .222.151.482.574.4A8.335 8.335 0 0010 1.667z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/nithinkotha" target="_blank" rel="noopener" class="contact-btn">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M17.04 17.043h-2.962v-4.64c0-1.107-.023-2.531-1.544-2.531-1.544 0-1.78 1.204-1.78 2.449v4.722H7.793V7.5h2.845v1.3h.04c.396-.75 1.364-1.54 2.807-1.54 3.001 0 3.556 1.975 3.556 4.545v5.238zM4.447 6.194a1.718 1.718 0 110-3.437 1.718 1.718 0 010 3.437zm1.484 10.85H2.96V7.5h2.97v9.543zM18.521 0H1.476C.66 0 0 .645 0 1.44v17.12C0 19.355.66 20 1.476 20H18.52c.818 0 1.48-.645 1.48-1.44V1.44C20 .645 19.338 0 18.521 0z"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:nithinkotha6@gmail.com" class="contact-btn contact-btn-outline">
+            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M2.5 5a1.667 1.667 0 011.667-1.667h11.666A1.667 1.667 0 0117.5 5v10a1.667 1.667 0 01-1.667 1.667H4.167A1.667 1.667 0 012.5 15V5z"/><path d="M2.5 5l7.5 5.833L17.5 5"/></svg>
+            Send Email
+          </a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ══════════ FOOTER ══════════ -->
   <footer class="footer">
-    <div class="wrap footer-inner">
-      <span class="f-name">Nithin Kotha</span>
-      <span class="f-copy">Azure Data Engineer · Texas, USA</span>
-      <span class="f-copy">Built with HTML &amp; CSS</span>
+    <div class="container footer-inner">
+      <span class="footer-brand">Nithin Kotha</span>
+      <span class="footer-copy">Azure Data Engineer &middot; Texas, USA</span>
+      <span class="footer-copy">Built with HTML &amp; CSS &middot; 2025</span>
     </div>
   </footer>
 
   <script>
-    // Cursor
-    const cursor = document.getElementById('cursor');
-    let cx = 0, cy = 0, tx = 0, ty = 0;
-    document.addEventListener('mousemove', e => { tx = e.clientX; ty = e.clientY; });
-    (function loop() {
-      cx += (tx - cx) * 0.13; cy += (ty - cy) * 0.13;
-      cursor.style.transform = `translate(${cx - 10}px,${cy - 10}px)`;
-      requestAnimationFrame(loop);
-    })();
-    document.querySelectorAll('a,button,.proj-row').forEach(el => {
-      el.addEventListener('mouseenter', () => cursor.classList.add('big'));
-      el.addEventListener('mouseleave', () => cursor.classList.remove('big'));
+    // Navbar scroll
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 48);
     });
 
-    // Navbar
-    const nav = document.getElementById('nav');
-    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 50));
-
-    // Active pill
-    const pills = document.querySelectorAll('.pill');
-    const ids = ['about','skills','projects','experience','contact'];
-    const obs = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          const i = ids.indexOf(e.target.id);
-          if (i > -1) { pills.forEach(p => p.classList.remove('active')); pills[i]?.classList.add('active'); }
-        }
-      });
-    }, { threshold: 0.35 });
-    ids.forEach(id => { const el = document.getElementById(id); if(el) obs.observe(el); });
-
-    // Mobile drawer
+    // Mobile menu
     const burger = document.getElementById('burger');
-    const drawer = document.getElementById('drawer');
-    const overlay = document.getElementById('drawerOverlay');
-    const closeBtn = document.getElementById('drawerClose');
-    const open = () => { drawer.classList.add('open'); overlay.classList.add('open'); document.body.style.overflow='hidden'; };
-    const close = () => { drawer.classList.remove('open'); overlay.classList.remove('open'); document.body.style.overflow=''; };
-    burger.addEventListener('click', open);
-    closeBtn.addEventListener('click', close);
-    overlay.addEventListener('click', close);
-    drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+    const mobileMenu = document.getElementById('mobileMenu');
+    burger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+      burger.classList.toggle('open');
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        burger.classList.remove('open');
+      });
+    });
 
-    // Reveal
-    const revealEls = document.querySelectorAll('.reveal');
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
     const revObs = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revObs.unobserve(e.target); } });
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); revObs.unobserve(e.target); }
+      });
     }, { threshold: 0.1 });
-    revealEls.forEach(el => revObs.observe(el));
+    reveals.forEach(el => revObs.observe(el));
 
     // Hero stagger
     window.addEventListener('load', () => {
-      [1,2,3,4,5].forEach(n => setTimeout(() =>
-        document.querySelectorAll(`.stagger-${n}`).forEach(el => el.classList.add('in')), n * 130));
+      [1,2,3,4,5].forEach(n =>
+        setTimeout(() =>
+          document.querySelectorAll(`.stagger-${n}`).forEach(el => el.classList.add('in')),
+        n * 140)
+      );
     });
   </script>
+
 </body>
 </html>
