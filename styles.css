@@ -311,12 +311,12 @@ button {
   align-items: center;
   background: var(--orange-bg);
   color: var(--orange);
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: .1em;
   text-transform: uppercase;
-  padding: 6px 14px;
-  border-radius: var(--r-full);
+  padding: 7px 15px;
+  border-radius: 10px;
   border: 1px solid var(--orange-b);
   margin-bottom: 32px;
 }
@@ -458,13 +458,13 @@ button {
 .hstat-n {
   display: block;
   font-family: var(--serif);
-  font-size: 1.75rem;
+  font-size: 1.85rem;
   color: var(--ink);
   margin-bottom: 4px;
 }
 
 .hstat-l {
-  font-size: 12px;
+  font-size: 16px;
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.05em;
