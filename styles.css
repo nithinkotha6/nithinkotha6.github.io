@@ -92,7 +92,7 @@ button {
 /* Reveal Animation */
 .reveal {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(30px);
   transition: opacity .65s var(--ts), transform .65s var(--ts);
 }
 
@@ -748,7 +748,25 @@ button {
 }
 
 .ec-loc {
+  font-size: 14px;
   color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.ec-client {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.ec-client strong {
+  color: var(--orange);
+  font-weight: 500;
+  display: block;
+  font-size: 14px;
+  margin-top: 4px;
 }
 
 .ec-role {
