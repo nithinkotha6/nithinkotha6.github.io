@@ -302,7 +302,7 @@ button {
   justify-content: center;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 40px 40px;
+  padding: 24px 40px 12px;
   width: 100%;
 }
 
@@ -311,31 +311,32 @@ button {
   align-items: center;
   background: var(--orange-bg);
   color: var(--orange);
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: .1em;
   text-transform: uppercase;
-  padding: 7px 15px;
-  border-radius: 10px;
+  padding: 6px 14px;
+  border-radius: 8px;
   border: 1px solid var(--orange-b);
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .hero-center {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 60px;
-  align-items: center;
+  gap: 40px;
+  align-items: flex-start;
 }
 
 .hero-name {
   font-family: var(--serif);
-  font-size: clamp(3.5rem, 8vw, 6.5rem);
+  font-size: clamp(3rem, 7.5vw, 6rem);
   font-weight: 400;
-  line-height: 0.95;
+  line-height: 1;
   color: var(--ink);
   letter-spacing: -0.02em;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  white-space: nowrap;
 }
 
 .hero-name em {
@@ -348,8 +349,8 @@ button {
   font-size: 1.15rem;
   color: var(--body);
   max-width: 500px;
-  margin-bottom: 40px;
-  line-height: 1.6;
+  margin-bottom: 28px;
+  line-height: 1.55;
 }
 
 .hero-actions {
@@ -449,8 +450,8 @@ button {
 .photo-meta {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-top: 16px;
+  gap: 6px;
+  margin-top: 12px;
 }
 
 .meta-chip {
@@ -466,7 +467,7 @@ button {
 .hero-stats {
   display: flex;
   max-width: 1080px;
-  margin: 24px auto 0;
+  margin: 16px auto 0;
   padding: 0;
   width: 100%;
 }
