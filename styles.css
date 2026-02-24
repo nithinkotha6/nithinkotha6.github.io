@@ -771,6 +771,36 @@ button {
   margin-bottom: 24px;
 }
 
+.ec-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ec-bullet-list li {
+  position: relative;
+  padding-left: 24px;
+  font-size: 16px;
+  color: var(--body);
+  line-height: 1.6;
+}
+
+.ec-bullet-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--orange);
+  opacity: 0.6;
+}
+
+.ec-bullet-list strong {
+  color: var(--ink);
+  font-weight: 500;
+}
+
 .ec-tech {
   display: flex;
   flex-wrap: wrap;
