@@ -429,9 +429,9 @@ button {
 .meta-chip {
   background: var(--white);
   border: 1px solid var(--border);
-  padding: 4px 12px;
-  border-radius: var(--r-full);
-  font-size: 12px;
+  padding: 7px 15px;
+  border-radius: 10px;
+  font-size: 15px;
   text-align: center;
 }
 
