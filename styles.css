@@ -176,8 +176,10 @@ button {
 
 .nav-brand {
   font-family: var(--serif);
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   color: var(--ink);
+  letter-spacing: 0.3px;
+  line-height: 1.4;
 }
 
 .nav-menu {
