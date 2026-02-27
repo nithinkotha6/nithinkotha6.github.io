@@ -470,6 +470,49 @@ button {
   text-align: center;
 }
 
+/* Rotating Icon Badge */
+.available-badge {
+  border-color: rgba(212, 98, 42, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Static Badge with Blinking Glowing Dot */
+.available-badge {
+  border-color: rgba(212, 98, 42, 0.3);
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(212, 98, 42, 0.12), 0 1px 3px rgba(0, 0, 0, .05);
+}
+
+.available-badge .chip-dot {
+  display: inline-block;
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 6px;
+  line-height: 1;
+  animation: dotGlowBlink 2s ease-in-out infinite;
+}
+
+@keyframes dotGlowBlink {
+  0% {
+    color: var(--orange);
+    text-shadow: 0 0 4px rgba(212, 98, 42, 0.3);
+  }
+  50% {
+    color: #FF8C42;
+    text-shadow: 0 0 12px rgba(212, 98, 42, 0.7), 0 0 24px rgba(212, 98, 42, 0.4);
+  }
+  100% {
+    color: var(--orange);
+    text-shadow: 0 0 4px rgba(212, 98, 42, 0.3);
+  }
+}
+
+.available-badge:hover {
+  box-shadow: 0 0 16px rgba(212, 98, 42, 0.2), 0 1px 3px rgba(0, 0, 0, .05);
+  border-color: rgba(212, 98, 42, 0.4);
+}
+
 /* Stats Bar */
 .hero-stats {
   display: flex;
