@@ -23,24 +23,27 @@
       <a href="#hero" class="nav-brand">Think in systems, build for scale</a>
       <ul class="nav-menu">
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Work</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#mindset">Philosophy</a></li>
         <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
-      <button class="burger" id="burger" aria-label="Menu">
+      <button class="burger" id="burger" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="mobileMenu">
         <span></span><span></span>
       </button>
     </nav>
   </header>
 
   <!-- Mobile menu -->
-  <div class="mobile-menu" id="mobileMenu">
-    <ul>
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Site navigation" aria-hidden="true">
+    <ul aria-label="Mobile navigation">
       <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Work</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#mindset">Philosophy</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -56,7 +59,9 @@
         <div class="hero-text stagger-2">
           <h1 class="hero-name">Nithin <em>Kotha</em></h1>
           <p class="hero-tagline stagger-3">
-            Architecting end-to-end data engineering and AI infrastructure from ingestion to intelligent decision-making, building reliable data foundations and intelligent systems through thoughtful engineering and design.
+            Architecting end-to-end data engineering and AI infrastructure from ingestion to intelligent
+            decision-making, building reliable data foundations and intelligent systems through thoughtful engineering
+            and design.
           </p>
           <div class="hero-actions stagger-4">
             <a href="#projects" class="btn-primary">View Projects</a>
@@ -66,7 +71,8 @@
 
         <div class="hero-photo stagger-2">
           <div class="photo-frame">
-            <img src="./profile.jpg?v=1.1" alt="Nithin Kotha" class="photo-img" />
+            <img src="./profile.jpg?v=1.1" alt="Nithin Kotha — Azure Data Engineer" class="photo-img" width="220"
+              height="260" />
           </div>
           <div class="photo-meta">
             <div class="meta-chip available-badge">
@@ -120,163 +126,16 @@
             I'm a data engineer focused on building data pipelines and intelligent systems.
           </p>
           <p>
-            My background includes internships in data engineering and analytics, where I built ETL pipelines, 
-            automated reporting workflows, and worked with Azure cloud services. My work experience spans 
-            designing data lake structures, building ADF and Synapse Analytics ETL pipelines, and orchestrating large-scale 
+            My background includes internships in data engineering and analytics, where I built ETL pipelines,
+            automated reporting workflows, and worked with Azure cloud services. My work experience spans
+            designing data lake structures, building ADF and Synapse Analytics ETL pipelines, and orchestrating
+            large-scale
             cloud migrations—from on-prem systems to modern cloud storage and analytics platforms.
           </p>
           <p>
-            Now I'm focused on AI applications—specifically RAG systems, intelligent agents, and production 
+            Now I'm focused on AI applications—specifically RAG systems, intelligent agents, and production
             deployment patterns.
           </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section class="section section-warm" id="skills">
-    <div class="container">
-      <div class="section-label reveal">Skills</div>
-      <h2 class="section-title reveal delay-1">Technical <em>Skills</em></h2>
-
-      <div class="skills-grid">
-        <div class="skill-group reveal delay-1">
-          <div class="sg-head">
-            <h3>Use Regularly</h3>
-          </div>
-          <div class="sg-chips">
-            <span>Azure Data Factory</span><span>Synapse Analytics</span> <span>QLIK</span><span>Databricks</span> <span>Logic App & Function App</span>
-            <span>Python</span> <span>SQL</span> </span>  
-            <span>Delta Lake</span> <span>PySpark</span> <span>OpenAI API</span>
-            <span>CI-CD</span> <span>Git & GitHub</span>
-          </div>
-        </div>
-
-        <div class="skill-group reveal delay-2">
-          <div class="sg-head">
-            <h3>Learning & Experimenting</h3>
-          </div>
-          <div class="sg-chips">
-            <span>Vector Databases ( CosmosDB, ChromaDB )</span> <span>Azure AI Foundry</span> <span>RAG Systems</span>
-            <span>Docker</span> <span>Terraform</span> <span>Agent Frameworks (AutoGen, LangGraph)</span>
-            <span>FastAPI</span> <span>LangChain</span><span>LangGraph</span> 
-          </div>
-        </div>
-
-        <div class="skill-group reveal delay-3">
-          <div class="sg-head">
-            <h3>Next Up</h3>
-          </div>
-          <div class="sg-chips">
-            <span>Multi-agent orchestration patterns</span> <span>Production LLMOps</span>
-            <span>System design for AI applications</span> <span>Vector search techniques (BM25, semantic hybrid)</span>
-            <span>LLM fine-tuning & evaluation</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="section" id="projects">
-    <div class="container">
-      <div class="section-label reveal">Projects</div>
-      <h2 class="section-title reveal delay-1">Featured <em>Work</em></h2>
-
-      <div class="projects-grid">
-        <div class="project-card reveal delay-1">
-          <div class="pc-top">
-            <span class="pc-tag">AI · RAG</span>
-            <a href="#" class="pc-link"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4">
-                <path d="M4.667 11.333L11.333 4.667M4.667 4.667h6.666v6.666" />
-              </svg></a>
-          </div>
-          <h3 class="pc-title">Document QA System</h3>
-          <p class="pc-desc"><strong>RAG-powered chatbot for querying documents</strong><br/><br/>
-          Built a question-answering system that lets users query document collections using natural language. The system processes PDFs and text files into 500-token chunks, generates embeddings using OpenAI API, stores vectors in ChromaDB for fast similarity search, retrieves relevant chunks and generates answers with GPT, and provides a simple Streamlit interface with source citations.<br/><br/>
-          <strong>Results:</strong> Sub-second response times for most queries. Tested on 200+ documents. Cost: ~$10/month in API calls.<br/><br/>
-          <strong>Key Learning:</strong> Chunk size significantly impacts retrieval quality. Hybrid search (keyword + semantic) worked better than vector search alone.</p>
-          <div class="pc-chips">
-            <span>Python</span> <span>OpenAI API</span> <span>LangChain</span> <span>ChromaDB</span> <span>Streamlit</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal delay-2">
-          <div class="pc-top">
-            <span class="pc-tag">Data Pipeline</span>
-            <a href="#" class="pc-link"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4">
-                <path d="M4.667 11.333L11.333 4.667M4.667 4.667h6.666v6.666" />
-              </svg></a>
-          </div>
-          <h3 class="pc-title">Sales Analytics Pipeline</h3>
-          <p class="pc-desc"><strong>Batch data pipeline with Azure services</strong><br/><br/>
-          Built an ETL pipeline to transform raw sales data into analytics-ready tables for business reporting. Architecture includes Azure Data Factory for daily data ingestion, Databricks for processing 100K+ records using PySpark, Delta Lake for storing transformed data with versioning, dbt for data modeling (star schema), and Power BI for visualization.<br/><br/>
-          <strong>Impact:</strong> Automated manual reporting process (saved ~5 hours/week). Reliable daily updates instead of ad-hoc exports. Handles incremental loads efficiently.<br/><br/>
-          <strong>Challenges:</strong> Initial load took 45 minutes—optimized to 12 minutes using partitioning. Had to handle late-arriving data and duplicates.</p>
-          <div class="pc-chips">
-            <span>Azure (ADF, Databricks)</span> <span>PySpark</span> <span>dbt</span> <span>SQL</span> <span>Delta Lake</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal delay-3">
-          <div class="pc-top">
-            <span class="pc-tag">Observability</span>
-            <a href="#" class="pc-link"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4">
-                <path d="M4.667 11.333L11.333 4.667M4.667 4.667h6.666v6.666" />
-              </svg></a>
-          </div>
-          <h3 class="pc-title">Live Azure Data Pipeline Monitoring</h3>
-          <p class="pc-desc"><strong>Real-time ETL pipeline observability system</strong><br/><br/>
-          Built a monitoring solution to track Azure Data Factory and Synapse Analytics pipelines in real-time, eliminating manual pipeline health checks. The system captures pipeline execution logs from Azure Data Factory and Synapse, sends logs to Azure Log Analytics Workspace, creates dashboards in Azure Portal for visualizing pipeline runs, tracks success rates, execution times, and failure patterns, and enables proactive alerts for pipeline failures.<br/><br/>
-          <strong>Impact:</strong> Reduced incident detection time by 80%. Eliminated daily manual health check reviews. Enabled data-driven optimization of pipeline performance.</p>
-          <div class="pc-chips">
-            <span>Azure (Data Factory, Synapse, Log Analytics)</span> <span>KQL</span> <span>Azure Portal</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal delay-4">
-          <div class="pc-top">
-            <span class="pc-tag">Automation</span>
-            <a href="#" class="pc-link"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4">
-                <path d="M4.667 11.333L11.333 4.667M4.667 4.667h6.666v6.666" />
-              </svg></a>
-          </div>
-          <h3 class="pc-title">Automated Report Generator</h3>
-          <p class="pc-desc"><strong>Scheduled analytics reports using Airflow</strong><br/><br/>
-          Built a workflow automation system that generates weekly analytics reports and emails them to stakeholders. Airflow DAG runs every Monday morning, extracts data from Azure SQL Database, runs aggregations and trend analysis, generates PDF report with charts, and emails to distribution list automatically.<br/><br/>
-          <strong>Results:</strong> Eliminated 2 hours of manual work per week. Consistent report format and timing. Easy to add new metrics to template.<br/><br/>
-          <strong>Learning:</strong> Airflow has a learning curve but automation is worth it. Started simple with BashOperator, then moved to PythonOperator for complex logic.</p>
-          <div class="pc-chips">
-            <span>Airflow</span> <span>Python</span> <span>SQL</span> <span>Pandas</span> <span>Plotly</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRINCIPLES / MINDSET -->
-  <section class="section" id="mindset">
-    <div class="container">
-      <div class="section-label reveal">Philosophy</div>
-      <h2 class="section-title reveal delay-1">Engineering <em>Mindset</em></h2>
-      <div class="principles-grid">
-        <div class="principle reveal delay-1">
-          <span class="p-num">01</span>
-          <h3>Performance as a Culture</h3>
-          <p>Efficiency isn't an afterthought. Every Spark partition, every ADF trigger, and every SQL query is
-            optimized for the highest possible throughput and lowest cost per unit.</p>
-        </div>
-        <div class="principle reveal delay-2">
-          <span class="p-num">02</span>
-          <h3>Resilience by Design</h3>
-          <p>I engineer for failure so the system doesn't. My architectures prioritize self-healing pipelines, detailed
-            observability, and high-availability Failover patterns.</p>
-        </div>
-        <div class="principle reveal delay-3">
-          <span class="p-num">03</span>
-          <h3>Architectural Scalability</h3>
-          <p>A system isn't finished until it can scale 100x. I use Infrastructure-as-Code (Terraform) and modular pipeline design to handle enterprise-scale growth without manual overhead.</p>
         </div>
       </div>
     </div>
@@ -299,7 +158,8 @@
           </div>
           <div class="ec-content">
             <h3 class="ec-role">Azure Data Engineer</h3>
-            <p class="ec-desc">Building ETL/ELT data pipelines and ingestion frameworks for enterprise energy infrastructure, connecting 50+ data sources to cloud analytics.</p>
+            <p class="ec-desc">Building ETL/ELT data pipelines and ingestion frameworks for enterprise energy
+              infrastructure, connecting 50+ data sources to cloud analytics.</p>
             <ul class="ec-bullet-list">
               <li>Architected automated <strong>ADF</strong> and <strong>Databricks</strong> pipelines integrating 50+
                 heterogeneous sources including Oracle, SAP, Salesforce, and S3.</li>
@@ -330,7 +190,8 @@
           </div>
           <div class="ec-content">
             <h3 class="ec-role">Azure Data Engineer</h3>
-            <p class="ec-desc">Migrated legacy Oracle databases to Azure and built high-performance data pipelines for analytics.</p>
+            <p class="ec-desc">Migrated legacy Oracle databases to Azure and built high-performance data pipelines for
+              analytics.</p>
             <ul class="ec-bullet-list">
               <li>Orchestrated the migration of legacy <strong>Oracle</strong> ecosystems to <strong>ADLS Gen 2</strong>
                 and <strong>Synapse Analytics</strong> using automated ADF integration.</li>
@@ -356,7 +217,8 @@
           </div>
           <div class="ec-content">
             <h3 class="ec-role">Data Engineer Intern</h3>
-            <p class="ec-desc">Built data lake structures and Informatica ETL workflows for enterprise data integration.</p>
+            <p class="ec-desc">Built data lake structures and Informatica ETL workflows for enterprise data integration.
+            </p>
             <ul class="ec-bullet-list">
               <li>Designed and implemented enterprise-scale <strong>Data Lakes</strong> to support rapid analytics and
                 processing of big data.</li>
@@ -403,6 +265,189 @@
     </div>
   </section>
 
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-label reveal">Projects</div>
+      <h2 class="section-title reveal delay-1">Featured <em>Work</em></h2>
+
+      <div class="projects-grid">
+        <div class="project-card reveal delay-1">
+          <div class="pc-top">
+            <span class="pc-tag">AI · RAG</span>
+            <a href="https://github.com/nithinkotha6" class="pc-link" target="_blank" rel="noopener noreferrer"
+              aria-label="View Document QA System on GitHub"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                stroke-width="1.4">
+                <path d="M4.667 11.333L11.333 4.667M4.667 4.667h6.666v6.666" />
+              </svg></a>
+          </div>
+          <h3 class="pc-title">Document QA System</h3>
+          <p class="pc-desc"><strong>RAG-powered chatbot for querying documents</strong><br /><br />
+            Built a question-answering system that lets users query document collections using natural language. The
+            system processes PDFs and text files into 500-token chunks, generates embeddings using OpenAI API, stores
+            vectors in ChromaDB for fast similarity search, retrieves relevant chunks and generates answers with GPT,
+            and provides a simple Streamlit interface with source citations.<br /><br />
+            <strong>Results:</strong> Sub-second response times for most queries. Tested on 200+ documents. Cost:
+            ~$10/month in API calls.<br /><br />
+            <strong>Key Learning:</strong> Chunk size significantly impacts retrieval quality. Hybrid search (keyword +
+            semantic) worked better than vector search alone.
+          </p>
+          <div class="pc-chips">
+            <span>Python</span> <span>OpenAI API</span> <span>LangChain</span> <span>ChromaDB</span>
+            <span>Streamlit</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-2">
+          <div class="pc-top">
+            <span class="pc-tag">Data Pipeline</span>
+            <a href="https://github.com/nithinkotha6" class="pc-link" target="_blank" rel="noopener noreferrer"
+              aria-label="View Sales Analytics Pipeline on GitHub"><svg viewBox="0 0 16 16" fill="none"
+                stroke="currentColor" stroke-width="1.4">
+                <path d="M4.667 11.333L11.333 4.667M4.667 4.667h6.666v6.666" />
+              </svg></a>
+          </div>
+          <h3 class="pc-title">Sales Analytics Pipeline</h3>
+          <p class="pc-desc"><strong>Batch data pipeline with Azure services</strong><br /><br />
+            Built an ETL pipeline to transform raw sales data into analytics-ready tables for business reporting.
+            Architecture includes Azure Data Factory for daily data ingestion, Databricks for processing 100K+ records
+            using PySpark, Delta Lake for storing transformed data with versioning, dbt for data modeling (star schema),
+            and Power BI for visualization.<br /><br />
+            <strong>Impact:</strong> Automated manual reporting process (saved ~5 hours/week). Reliable daily updates
+            instead of ad-hoc exports. Handles incremental loads efficiently.<br /><br />
+            <strong>Challenges:</strong> Initial load took 45 minutes—optimized to 12 minutes using partitioning. Had to
+            handle late-arriving data and duplicates.
+          </p>
+          <div class="pc-chips">
+            <span>Azure (ADF, Databricks)</span> <span>PySpark</span> <span>dbt</span> <span>SQL</span> <span>Delta
+              Lake</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-3">
+          <div class="pc-top">
+            <span class="pc-tag">Observability</span>
+            <a href="https://github.com/nithinkotha6" class="pc-link" target="_blank" rel="noopener noreferrer"
+              aria-label="View Azure Pipeline Monitoring project on GitHub"><svg viewBox="0 0 16 16" fill="none"
+                stroke="currentColor" stroke-width="1.4">
+                <path d="M4.667 11.333L11.333 4.667M4.667 4.667h6.666v6.666" />
+              </svg></a>
+          </div>
+          <h3 class="pc-title">Live Azure Data Pipeline Monitoring</h3>
+          <p class="pc-desc"><strong>Real-time ETL pipeline observability system</strong><br /><br />
+            Built a monitoring solution to track Azure Data Factory and Synapse Analytics pipelines in real-time,
+            eliminating manual pipeline health checks. The system captures pipeline execution logs from Azure Data
+            Factory and Synapse, sends logs to Azure Log Analytics Workspace, creates dashboards in Azure Portal for
+            visualizing pipeline runs, tracks success rates, execution times, and failure patterns, and enables
+            proactive alerts for pipeline failures.<br /><br />
+            <strong>Impact:</strong> Reduced incident detection time by 80%. Eliminated daily manual health check
+            reviews. Enabled data-driven optimization of pipeline performance.
+          </p>
+          <div class="pc-chips">
+            <span>Azure (Data Factory, Synapse, Log Analytics)</span> <span>KQL</span> <span>Azure Portal</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal delay-4">
+          <div class="pc-top">
+            <span class="pc-tag">Automation</span>
+            <a href="https://github.com/nithinkotha6" class="pc-link" target="_blank" rel="noopener noreferrer"
+              aria-label="View Automated Report Generator on GitHub"><svg viewBox="0 0 16 16" fill="none"
+                stroke="currentColor" stroke-width="1.4">
+                <path d="M4.667 11.333L11.333 4.667M4.667 4.667h6.666v6.666" />
+              </svg></a>
+          </div>
+          <h3 class="pc-title">Automated Report Generator</h3>
+          <p class="pc-desc"><strong>Scheduled analytics reports using Airflow</strong><br /><br />
+            Built a workflow automation system that generates weekly analytics reports and emails them to stakeholders.
+            Airflow DAG runs every Monday morning, extracts data from Azure SQL Database, runs aggregations and trend
+            analysis, generates PDF report with charts, and emails to distribution list automatically.<br /><br />
+            <strong>Results:</strong> Eliminated 2 hours of manual work per week. Consistent report format and timing.
+            Easy to add new metrics to template.<br /><br />
+            <strong>Learning:</strong> Airflow has a learning curve but automation is worth it. Started simple with
+            BashOperator, then moved to PythonOperator for complex logic.
+          </p>
+          <div class="pc-chips">
+            <span>Airflow</span> <span>Python</span> <span>SQL</span> <span>Pandas</span> <span>Plotly</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-warm" id="skills">
+    <div class="container">
+      <div class="section-label reveal">Skills</div>
+      <h2 class="section-title reveal delay-1">Technical <em>Skills</em></h2>
+
+      <div class="skills-grid">
+        <div class="skill-group reveal delay-1">
+          <div class="sg-head">
+            <h3>Use Regularly</h3>
+          </div>
+          <div class="sg-chips">
+            <span>Azure Data Factory</span><span>Synapse Analytics</span> <span>QLIK</span><span>Databricks</span>
+            <span>Logic App &amp; Function App</span>
+            <span>Python</span> <span>SQL</span>
+            <span>Delta Lake</span> <span>PySpark</span> <span>OpenAI API</span>
+            <span>CI-CD</span> <span>Git &amp; GitHub</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal delay-2">
+          <div class="sg-head">
+            <h3>Learning & Experimenting</h3>
+          </div>
+          <div class="sg-chips">
+            <span>Vector Databases ( CosmosDB, ChromaDB )</span> <span>Azure AI Foundry</span> <span>RAG Systems</span>
+            <span>Docker</span> <span>Terraform</span> <span>Agent Frameworks (AutoGen, LangGraph)</span>
+            <span>FastAPI</span> <span>LangChain</span>
+          </div>
+        </div>
+
+        <div class="skill-group reveal delay-3">
+          <div class="sg-head">
+            <h3>Next Up</h3>
+          </div>
+          <div class="sg-chips">
+            <span>Multi-agent orchestration patterns</span> <span>Production LLMOps</span>
+            <span>System design for AI applications</span> <span>Vector search techniques (BM25, semantic hybrid)</span>
+            <span>LLM fine-tuning & evaluation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRINCIPLES / MINDSET -->
+  <section class="section" id="mindset">
+    <div class="container">
+      <div class="section-label reveal">Philosophy</div>
+      <h2 class="section-title reveal delay-1">Engineering <em>Mindset</em></h2>
+      <div class="principles-grid">
+        <div class="principle reveal delay-1">
+          <span class="p-num">01</span>
+          <h3>Performance as a Culture</h3>
+          <p>Efficiency isn't an afterthought. Every Spark partition, every ADF trigger, and every SQL query is
+            optimized for the highest possible throughput and lowest cost per unit.</p>
+        </div>
+        <div class="principle reveal delay-2">
+          <span class="p-num">02</span>
+          <h3>Resilience by Design</h3>
+          <p>I engineer for failure so the system doesn't. My architectures prioritize self-healing pipelines, detailed
+            observability, and high-availability Failover patterns.</p>
+        </div>
+        <div class="principle reveal delay-3">
+          <span class="p-num">03</span>
+          <h3>Architectural Scalability</h3>
+          <p>A system isn't finished until it can scale 100x. I use Infrastructure-as-Code (Terraform) and modular
+            pipeline design to handle enterprise-scale growth without manual overhead.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CONTACT -->
   <section class="contact-section" id="contact">
     <div class="container">
@@ -410,8 +455,10 @@
         <h2 class="contact-title">Interested in <em>what I build?</em></h2>
         <p class="contact-sub">Open to senior data engineering roles and technical collaboration.</p>
         <div class="contact-links">
-          <a href="https://www.linkedin.com/in/nithin-k-2538a12bb" class="btn-primary">LinkedIn</a>
-          <a href="https://github.com/nithinkotha6" class="btn-secondary">GitHub</a>
+          <a href="https://www.linkedin.com/in/nithin-k-2538a12bb" class="btn-primary" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/nithinkotha6" class="btn-secondary" target="_blank"
+            rel="noopener noreferrer">GitHub</a>
           <a href="mailto:nrkotha13@gmail.com" class="btn-secondary">Email</a>
         </div>
       </div>
@@ -426,30 +473,7 @@
     </div>
   </footer>
 
-  <script>
-    // Reveal Observer
-    const reveals = document.querySelectorAll('.reveal');
-    const revObs = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revObs.unobserve(e.target); } });
-    }, { threshold: 0.1 });
-    reveals.forEach(el => revObs.observe(el));
-
-    // Stagger Init
-    window.addEventListener('load', () => {
-      [1, 2, 3, 4, 5].forEach(n => setTimeout(() =>
-        document.querySelectorAll(`.stagger-${n}`).forEach(el => el.classList.add('in')), n * 140));
-    });
-
-    // Navbar
-    window.addEventListener('scroll', () => {
-      document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 48);
-    });
-
-    // Mobile
-    const burger = document.getElementById('burger');
-    const menu = document.getElementById('mobileMenu');
-    burger.onclick = () => { burger.classList.toggle('open'); menu.classList.toggle('open'); }
-  </script>
+  <script src="main.js" defer></script>
 </body>
 
 </html>
