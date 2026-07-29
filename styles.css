@@ -671,13 +671,17 @@ button {
 }
 
 .sg-chips span {
+  width: auto;
+  display: inline-block;
   font-size: 15px;
-  padding: 4px 12px;
+  padding: 6px 14px;
   background: var(--cream);
   border: 1px solid var(--border);
-  border-radius: var(--r-full);
+  border-radius: 9999px;
   transition: background-color var(--t), border-color var(--t), transform var(--t);
   cursor: default;
+  white-space: normal;
+  text-align: center;
 }
 
 .sg-chips span:hover {
@@ -1071,6 +1075,17 @@ button {
   .skills-grid,
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .skills-grid {
+    width: 100%;
+  }
+
+  .skill-group,
+  .skill-group:last-child:nth-child(odd) {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0;
   }
 
   .exp-card {
